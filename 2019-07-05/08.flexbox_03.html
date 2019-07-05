@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>flexbox_03</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <style>
+        header {
+            background-color: green;
+        }
+        /*
+            지금부터 container 클래스는 flex box의 부모이다.
+        */
+        header h3{
+            padding: 1.5rem;
+            text-align: center;
+
+        }
+        /*
+            flex-direction을 지정하면 세로방향으로 배치된다
+            flex-direction을 지정하지 않으면 가로방향으로 배치된다.
+            flex-wrap : wrap
+            자식 box들을 일정하게 배치되고 화면의 크기가 변하게 되면 자동으로
+            wrapping(줄바꿈)한다.
+            nowrap 으로 설정을 하면 줄바꿈 하지 않는다 : 기본값
+        */
+        .container {
+            display: flex;
+            flex-wrap: wrap-reverse;
+            
+        }
+        /*
+            flex container에 box들을 배치하는데
+            flex 속성 값에 따라 배율을 자동조절하여
+            box들을 채워 넣는다.
+        */
+        .col{
+            background-color: slateblue;
+            color: white;
+            margin: 5px;
+            width: 100px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h3>flexbox</h3>
+    </header>
+    <section class="container">
+        <div class="col">1</div>
+        <div class="col" id="col2">2</div>
+        <div class="col">3</div>
+        <div class="col">4</div>
+        <div class="col">5</div>
+        <div class="col">6</div>
+        <div class="col">7</div>
+        <div class="col">8</div>
+        <div class="col">9</div>
+        <div class="col">10</div>
+    </section>    
+</body>
+</html>

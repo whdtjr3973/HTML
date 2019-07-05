@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <style>
+        span.sa, span.sb, span.sc{
+            border: 1px solid blue;
+            background-color: green;
+            color: blue;
+        }
+        /*
+            span tag는 기본 display 속성이 inline
+        */
+        span.sa{
+            display: inline;
+            width: 80px;
+            height: 80px;
+        }
+        /*
+            inline-block
+            width와 height를 지정하여 box 크기를 만들수 있지만
+            inline과 같은 글자로서의 속성을 일부 유지한다.
+        */
+        span.sb{
+            display: inline-block;
+            width: 80px;
+            height: 80px;
+        }
+        /*
+            block
+            일반적인 block tag의 성질을 그대로 모두 물려받는다.
+        */
+        span.sc{
+            display: block;
+            width: 80px;
+            height: 80px;
+        }
+    </style>
+</head>
+<body>
+        <div id="div1">
+                
+                모든 국민은 <span class="sa">언론·출판의 자유</span>와
+                <span class="sb">집회·결사의 자유</span>를 가진다. 재판의 전심절차로서 행정심판을 할 수 있다. 행정심판의 절차는 법률로 정하되,
+                사법절차가 준용되어야 한다. 국정의 중요한 사항에 관한 대통령의 자문에 응하기 위하여 국가원로로 구성되는
+                국가원로자문회의를 둘 수 있다. 대통령이 제1항의 기간내에 공포나 재의의 요구를 하지 아니한 때에도
+                그 법률안은 법률로서 확정된다. 국회는 헌법개정안이 공고된 날로부터 60일 이내에 의결하여야 하며,
+                국회의 의결은 재적의원 3분의 2 이상의 찬성을 얻어야 한다. <span class="sc">교육의 자주성·전문성·정치적 중립성 및
+                대학의 자율성</span>은 법률이 정하는 바에 의하여 보장된다.
+        </div>
+    
+</body>
+</html>

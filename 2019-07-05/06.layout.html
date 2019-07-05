@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <style>
+        #title{
+            background-color: green;
+            text-align: center;
+            color: blue;
+            padding: 2rem;
+        }
+        nav{
+            background-color: black;
+            color: aqua;
+            padding-left: 10px;
+        }
+        /*
+            inherit
+            자신을 감싸고 있는 tag에 적용된 style을 상속받아서 적용하라
+        */
+        a{
+            color:inherit;
+        }
+        footer{
+            background-color: blue;
+            color: white;
+            padding: 0.5rem;
+        }
+        address{
+            text-align: center;
+        }
+        /*
+            selector를 컴마(,)로 여러개 지정하면 
+            공통된 속성을 지정할 수 있다.
+        */
+        #ar1, #ar2, #ar3, .arclass{
+            background-color: #ccc;
+            margin: 5px;
+            padding: 16px;
+        }
+
+        .arclass {
+            background-color: #ccc;
+            margin: 5px;
+            padding: 16px;
+        }
+        /*
+            box 크기를 원래 크기(자신을 감싸는 어떤 것)의 50%만큼의 크기로 설정하라
+        */
+        #ar2{
+            width: 50%;
+        }
+        /*
+            margin: 0 auto;
+            margin 값에 top과 bottom을 임의 값으로 설정하고
+            Left와 Right는 자동설정을 해서
+            box를 가운데 정렬하는 효과를 준다.
+        */
+        #ar3{
+            width: 50%;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h3 id="title">layout 연습</h3>
+    </header>
+    <nav>
+        <a href="https://www.naver.com">네이버</a>&nbsp;&nbsp;
+        <a href="https://www.daum.net">다음</a>&nbsp;&nbsp;
+        <a href="https://www.google.com">구글</a>&nbsp;&nbsp;
+    </nav>
+    <section>
+        <article id="ar1" calss="arclass">
+                모든 국민은 자기의 행위가 아닌 친족의 행위로 인하여 불이익한 처우를 받지 아니한다. 국가는 평생교육을 진흥하여야 한다. 국가는 노인과 청소년의 복지향상을 위한 정책을 실시할 의무를 진다. 모든 국민은 통신의 비밀을 침해받지 아니한다. 국가원로자문회의의 의장은 직전대통령이 된다. 다만, 직전대통령이 없을 때에는 대통령이 지명한다. 대법원장은 국회의 동의를 얻어 대통령이 임명한다. 대한민국의 주권은 국민에게 있고, 모든 권력은 국민으로부터 나온다. 국가는 재해를 예방하고 그 위험으로부터 국민을 보호하기 위하여 노력하여야 한다. 모든 국민은 헌법과 법률이 정한 법관에 의하여 법률에 의한 재판을 받을 권리를 가진다.
+        </article>
+        <article id="ar2" calss="arclass">
+                국채를 모집하거나 예산외에 국가의 부담이 될 계약을 체결하려 할 때에는 정부는 미리 국회의 의결을 얻어야 한다. 대통령은 제3항과 제4항의 사유를 지체없이 공포하여야 한다. 재의의 요구가 있을 때에는 국회는 재의에 붙이고, 재적의원과반수의 출석과 출석의원 3분의 2 이상의 찬성으로 전과 같은 의결을 하면 그 법률안은 법률로서 확정된다. 체포·구속·압수 또는 수색을 할 때에는 적법한 절차에 따라 검사의 신청에 의하여 법관이 발부한 영장을 제시하여야 한다. 다만, 현행범인인 경우와 장기 3년 이상의 형에 해당하는 죄를 범하고 도피 또는 증거인멸의 염려가 있을 때에는 사후에 영장을 청구할 수 있다.
+        </article>
+        <article id="ar3" calss="arclass">
+                국가안전보장회의는 대통령이 주재한다. 국정감사 및 조사에 관한 절차 기타 필요한 사항은 법률로 정한다. 헌법재판소는 법관의 자격을 가진 9인의 재판관으로 구성하며, 재판관은 대통령이 임명한다. 대통령은 국가의 원수이며, 외국에 대하여 국가를 대표한다. 대한민국은 통일을 지향하며, 자유민주적 기본질서에 입각한 평화적 통일 정책을 수립하고 이를 추진한다. 대통령은 법률이 정하는 바에 의하여 사면·감형 또는 복권을 명할 수 있다. 대한민국은 국제평화의 유지에 노력하고 침략적 전쟁을 부인한다. 누구든지 체포 또는 구속을 당한 때에는 적부의 심사를 법원에 청구할 권리를 가진다. 국가는 건전한 소비행위를 계도하고 생산품의 품질향상을 촉구하기 위한 소비자보호운동을 법률이 정하는 바에 의하여 보장한다.
+        </article>
+    </section>
+    <footer>
+        <address>CopyRight &copy; whdtjr3973@naver.com</address>
+    </footer>
+    
+</body>
+</html>
