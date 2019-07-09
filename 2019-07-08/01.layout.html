@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Test1</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <style>
+        #title{
+            background-image: linear-gradient(to Top,blue, skyblue);
+            color: white;
+            text-align: center;
+            padding: 0.8rem;
+      
+            
+        }
+
+        nav{
+            background-color: black;
+            color: white;
+            
+        }
+        ul.menu{
+            list-style: none;
+            display: flex;
+            margin: 0;
+            padding: 0;
+        }
+
+        /*
+            inherit : a tag를 감싸고 있는 tag의 글자색을 상속 받아라
+        */
+        ul.menu a{
+            display: block;
+            color: inherit;
+            text-decoration: none;
+            padding:12px 14px;
+        }
+        ul.menu a:hover{
+            background-color: white;
+            color: blue;
+            font-style: bold;
+        }
+        #nh{
+            background-image: linear-gradient(to top,gray,white);
+            color: black;
+            font-weight: bold;
+        }
+        #nh:hover{
+            background-color: blue;
+            color: white;
+
+        }
+        
+        #ad{
+            background-image:linear-gradient(to Top, blue,skyblue);
+            color: white;
+            text-align: center;
+            padding: 6px;
+            margin: 10px;
+        }
+    </style>
+    </head>
+<body>
+    <header><h3 id="title">나라 Plus</h3></header>
+    <nav>
+        <ul class="menu">
+            <li><a href="#" id="nh">홈</a></li>
+            <li><a href="#" >상품정보</a></li>
+            <li><a href="#" >로그인</a></li>
+            <li><a href="#" >회원가입</a></li>
+            <li><a href="#" >About</a></li>
+        </ul>
+    </nav>
+    <section class="section" >
+        <p><b>우리나라</b></p>
+        <p><b>대한민국</b></p>
+        <p><b>Republic of Korea</b></p>
+    </section>
+    <footer>
+            <address id="ad">Copyright &copy; whdtjr3973@naver.com</address>
+    </footer>
+
+</body>
+
+</html>

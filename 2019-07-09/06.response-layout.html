@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <style>
+        section.main {
+            display: flex;
+            flex-flow: wrap;
+            /* 화면이 작아지면 줄바꿈하여 표시(row 생략)*/
+        }
+
+        section.main article {
+            background-color: #eee;
+            flex: 600px;
+            /* flex 1, 1, 600 */
+        }
+
+        section.main nav {
+            background-color: #ddd;
+            min-height: 50px;
+            flex: 150px;
+            line-height: 2em;
+            order: -1;
+            padding: 0;
+
+        }
+
+        section.main aside {
+            background-color: #ccf;
+            min-height: 50px;
+            flex: 150px;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        ul li {
+            border-bottom: tomato 1px solid;
+        }
+
+        ul a {
+            display: block;
+            text-decoration: none;
+            padding-left: 10px;
+        }
+
+        ul a:hover {
+            background-color: green;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>제목</h1>
+    </header>
+    <section class="main">
+        <article>
+            <p>대한민국</p>
+            <p>이 헌법시행 당시의 대법원장과 대법원판사가 아닌 법관은 제1항 단서의 규정에 불구하고 이 헌법에 의하여 임명된 것으로 본다. 국가는 농지에 관하여 경자유전의 원칙이 달성될 수 있도록
+                노력하여야 하며, 농지의 소작제도는 금지된다. 국민의 자유와 권리는 헌법에 열거되지 아니한 이유로 경시되지 아니한다. 모든 국민은 자기의 행위가 아닌 친족의 행위로 인하여 불이익한 처우를
+                받지 아니한다. 국회는 정부의 동의없이 정부가 제출한 지출예산 각항의 금액을 증가하거나 새 비목을 설치할 수 없다. 모든 국민은 거주·이전의 자유를 가진다. 국가는 전통문화의 계승·발전과
+                민족문화의 창달에 노력하여야 한다.</p>
+        </article>
+        <nav>
+            <ul>
+                <li><a href="#">메뉴1</a></li>
+                <li><a href="#">메뉴2</a></li>
+                <li><a href="#">메뉴3</a></li>
+                <li><a href="#">메뉴4</a></li>
+                <li><a href="#">메뉴5</a></li>
+            </ul>
+        </nav>
+        <aside>
+            Aside
+        </aside>
+    </section>
+    <footer>
+        Footer
+    </footer>
+</body>
+
+</html>
