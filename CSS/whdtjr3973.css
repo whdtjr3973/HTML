@@ -1,0 +1,68 @@
+*{
+    box-sizing: border-box;
+ }
+ fieldset{
+    width:50%;
+    margin:10px auto;
+    border-radius: 4px;
+ }
+ legend{
+    font-weight: bold;
+    color: blue;
+ }
+ div.bz-in-box{
+    display: flex;
+    margin: 3px;
+ }
+ div.bz-in-box label{
+    display: block;
+    min-width: 80px;/* 화면이 커질때는 자동설정, 작아질때는 80px까지만 축소 */
+    text-align: right;
+    margin: 5px;
+    font-size: 16px;
+    font-weight:bold;
+ }
+ div.bz-in-box input{
+    display: block;
+    width:80%;
+    margin: 5px;
+    border-radius: 5px;
+    border: 1px solid gray;
+    padding:3px 5px;
+ }
+ div.bz-in-box input:hover{
+    border:1px solid red;
+ }
+ div.bz-in-box input:focus{
+    background-color: lightblue;
+ }
+ div.bz-btn-box{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    padding: 5px;
+ }
+ button.bz-btn{
+    border-radius: 5px;
+    display: inline-block;
+    padding: 4px 8px;
+    margin: 4px 8px
+ }
+ /* 오른쪽,아래,흐림,색상 */
+ button.bz-btn:hover{
+    box-shadow: 5px 5px 5px gray;
+    border: none;
+    cursor: pointer;
+ }
+ button.bz-btn.bz-save{
+    background-color: blue;
+    color: white;
+ }
+ button.bz-btn.reset.bz-green{
+    background-color: green;
+    color: white;
+ }
+ button.bz-btn.list{
+         background-color: orange;
+         color:white;
+ }

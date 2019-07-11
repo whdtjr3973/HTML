@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <style>
+        nav.main-menu{
+            display: flex;
+            background-color: rgb(250,192,144);
+
+        }
+
+        nav.main-menu img{
+            height: 60px;
+            transition: 0.5s;
+        }
+
+        header{
+            background-color: lightblue;
+            padding: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <a href="home"><img src="../images/my_logo.png" width="200px"></a>
+    </header>
+    <nav class="main-menu">
+        <img id="m-home" src="../images/menu/menu-home.png">
+        <img id="m-info" src="../images/menu/menu-info.png">
+        <img id="m-read" src="../images/menu/menu-read.png">
+        <img id="m-login" src="../images/menu/menu-login.png">
+        <img id="m-join" src="../images/menu/menu-join.png">
+    </nav>
+</body>
+<script>
+        var img_home = document.getElementById("m-home")
+        var img_info = document.getElementById("m-info")
+        var img_read = document.getElementById("m-read")
+        var img_login = document.getElementById("m-login")
+        var img_join = document.getElementById("m-join")
+    //마우스가 이미지에 올려 졌을때
+        img_home.onmouseover = function(){
+            img_home.src="../images/menu/menu-home-h.png"
+        }
+        // 마우스가 이미지를 벗어났을때
+        img_home.onmouseout = function(){
+            img_home.src="../images/menu/menu-home.png"
+        }
+        img_info.onmouseover = function(){
+            img_info.src="../images/menu/menu-info-h.png"
+        }
+        img_info.onmouseout = function(){
+            img_info.src="../images/menu/menu-info.png"
+        }
+        img_read.onmouseover = function(){
+            img_read.src="../images/menu/menu-read-h.png"
+        }
+        img_read.onmouseout = function(){
+            img_read.src="../images/menu/menu-read.png"
+        }
+        img_login.onmouseover = function(){
+            img_login.src="../images/menu/menu-login-h.png"
+        }
+        img_login.onmouseout = function(){
+            img_login.src="../images/menu/menu-login.png"
+        }
+        img_join.onmouseover = function(){
+            img_join.src="../images/menu/menu-join-h.png"
+        }
+        img_join.onmouseout = function(){
+            img_join.src="../images/menu/menu-join.png"
+        }
+</script>
+</html>
