@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <style>
+        div{
+            border: 1px solid blue;
+            padding: 10px;
+        }
+        .container{
+            display: flex;
+            justify-content: center;
+            align-items: baseline;
+
+            background-color: green;
+            width: 50%;
+            height: 200px;
+            margin: 10px auto;
+
+        }
+        .item-item1, .item-item2, .item-item3{
+            background-color: blue;
+            color: white;
+            padding: 10px;
+            margin: 10px;
+        }
+        .item-item1{
+            font-size: 30px;
+            height: 200px;
+        }
+        .item-item2{
+            font-size: 10px;
+            height: 100px;
+        }
+        .item-item3{
+            display: flex;
+            height: 300px;
+            justify-content: center;
+            align-items: center;
+        }
+
+
+    </style>
+
+</head>
+<body>
+   <div class="container">
+       <div class="item-item1">
+           <p></p>
+           <p>나는 flex-item</p>
+       </div>
+       <div class="item-item2">
+            나는 flex-item
+            <br/><br/><br/>
+       </div>     
+        <div class="item-item3">
+
+            나는 flex-item
+
+        </div>      
+    </div>
+</body>
+</html>

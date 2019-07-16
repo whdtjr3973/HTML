@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <style>
+        /*
+            flex-box
+            block tag들을 감싸고 있는 block tag에
+            display: block으로 설정하므로써
+            모든 기본 flex-box 설정이 완료된다.
+            flex : 기본이 block으로 된 tag
+            inline - block : 기본이 inline으로 된 tag
+        */
+        div{
+            display: block;
+            border: 1px solid;
+            margin: 0;
+            padding: 10px;
+        }
+        .container, .container-start, .container-end, .container-center{
+            display: flex; /* nowrap*/
+            flex-flow: row wrap; /* direction과  wrap을 동시에 저장*/
+            margin: 10px;   
+            border-radius: 5px;
+            background-color: green;
+
+        }
+        .container-start{
+            justify-content: flex-start;
+        }
+        .container-end{
+            justify-content: flex-end;
+        }
+        .container-center{
+            justify-content: center;
+        }
+        .item{
+            color: white;
+            margin: 10px;
+            padding: 20px;
+            text-align: center;
+            background-color: blue;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">flex-item1</div>
+        <div class="item">flex-item2</div>
+        <div class="item">flex-item3</div>
+    </div>
+    <div class="container-start">
+            <div class="item">flex-start</div>
+            <div class="item">flex-start</div>
+            <div class="item">flex-start</div>
+    </div>
+
+    <div class="container-end">
+                <div class="item">flex-end</div>
+                <div class="item">flex-end</div>
+                <div class="item">flex-end</div>
+    </div>
+
+    <div class="container-center">
+                    <div class="item">center</div>
+                    <div class="item">center</div>
+                    <div class="item">center</div>
+    </div>
+</body>
+</html>

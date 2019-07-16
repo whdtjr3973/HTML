@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <style>
+        /*
+            flex-box
+            block tag들을 감싸고 있는 block tag에
+            display: block으로 설정하므로써
+            모든 기본 flex-box 설정이 완료된다.
+            flex : 기본이 block으로 된 tag
+            inline - block : 기본이 inline으로 된 tag
+        */
+        div{
+            display: block;
+            border: 1px solid;
+            margin: 0;
+            padding: 10px;
+        }
+        .container{
+            display: flex;
+            flex-direction: row; /* 기본값으로 가로 방향*/
+            flex-direction: row-reverse ;/*가로방향 역순 배치*/
+            flex-wrap: nowrap; /* 기본값, item크기 합이 화면을 벗어나면 줄여라*/
+            flex-wrap: wrap; /* 화면이 item의 width 합보다 작아지면 item 줄바꿈*/
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div>flex-item1</div>
+        <div>flex-item2</div>
+        <div>flex-item3</div>
+        <div>flex-item4</div>
+        <div>flex-item5</div>
+        <div>flex-item6</div>
+        <div>flex-item7</div>
+        <div>flex-item8</div>
+        <div>flex-item9</div>
+        <div>flex-item10</div>
+        <p>나는 p이다</p>
+    </div>
+</body>
+</html>

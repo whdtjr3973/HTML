@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <style>
+        /*
+            display: inline-block;
+            width를 지정해서 실제 박스의 크기를 줄일수 있는 성질을 부여
+        */
+        /*
+            inline-block으로 가로배치 box 리스트 설정
+            1. 모든 box들에 display 속성을 inline-block으로 설정
+            2. vertical-align:top으로 설정하고 layout을 배치를 시작
+            3. inline-block으로 배치할 칼럼box들은 tag를 빈칸 enter로
+                분리하지 않아야 한다.
+        */
+        .i-box {
+            display: inline-block;
+            border: 1px solid blue;
+            width: 70%;
+
+            margin: 0;
+            vertical-align: top;
+        }
+
+        nav {
+            display: inline-block;
+            width: 25%;
+            border: 1px solid red;
+            vertical-align: top;
+            margin: 0;
+        }
+
+        div.box {
+            border: 1px solid red;
+            margin-bottom: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li>메뉴1</li>
+            <li>메뉴2</li>
+            <li>메뉴3</li>
+            <li>메뉴4</li>
+            <li>메뉴5</li>
+        </ul>
+    </nav>
+    <div class="i-box">
+        <div class="box">Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, ipsa eos, eaque non numquam
+            labore sunt quo quaerat laboriosam tempora porro amet modi autem officiis error animi, est deleniti aliquid.
+        </div>
+        <div class="box">Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias vero, eaque doloribus sed quia
+            cumque harum sapiente fugiat voluptas praesentium accusamus veniam quaerat natus nobis! Enim quas ducimus
+            harum officiis?Eaque itaque quaerat beatae, natus unde consequuntur ex autem qui quasi eos doloremque quo
+            at! Eligendi maxime deleniti nisi delectus totam quo reiciendis omnis. Soluta dolor consectetur commodi
+            ipsum atque?</div>
+
+    </div>
+</body>
+
+</html>
