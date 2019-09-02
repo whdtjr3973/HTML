@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <style>
+       .out-box{
+          width:50%;
+          margin:0 auto;
+       }
+       .in-box{
+          width:45%;
+       }
+    </style>
+</head>
+
+<body>
+   <fieldset class="out-box">
+      <form:form modelAttribute="bbsReqDto" method="POST" enctype="multipart/form-data">
+      
+   
+         <div class="in-box">
+            <label for="bbs_date" id="b_date">작성일자</label>
+            <form:input type="date" id="bbs_date" path="bbs_date" /><br/>
+            <form:errors path="bbs_date" class="in-box-error" />
+         </div>
+         <div class="in-box">
+            <label for="bbs_time">작성시간</label>
+            <form:input type="text" id="bbs_time" path="bbs_time" /><br/>
+            <form:errors path="bbs_time" class="in-box-error"/>
+         </div>
+         <div class="in-box">
+            <label for="bbs_auth">작성자</label>
+            <form:input type="text" id="bbs_auth" path="bbs_auth" /><br/>
+            <form:errors path="bbs_auth" class="in-box-error" />
+         </div>
+         <div class="in-box">
+            <label for="bbs_title">제목</label>
+            <form:input type="text" id="bbs_title" path="bbs_title" /><br/>
+            <form:errors path="bbs_title"  class="in-box-error"/>
+         </div>
+         <div class="in-box">
+            <label for="bbs_content">내용</label>
+            <form:textarea rows="10" id="bbs_content" path="bbs_content" />
+         </div>
+         <div class="in-box">
+            <label></label>		
+            <div class="drag_box">
+               <h3>업로드할 파일을 Drag해서 놓으세요</h3>
+            </div>
+         </div>
+         <div class="in-box">
+            <label></label>
+            <div class="image_box">
+            </div>
+         </div>
+         <div class="btn-box center">
+            <button class="bz-btn save">저장</button>
+         </div>
+      </form:form>
+   </fieldset>
+</body>
+
+</html>
